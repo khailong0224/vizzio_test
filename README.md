@@ -73,4 +73,4 @@ Seven regression tests cover JSON-driven rendering, navigation, data-error recov
 
 Start each task from updated `develop` on `feature/<short-description>`. Commit completed work in focused commits, then open a PR with **base `develop`**. Do not commit task changes directly to `develop` or `main`, and do not merge a feature PR without the owner's approval. The owner creates the final **`develop` → `main`** release PR.
 
-See [AGENTS.md](AGENTS.md) for coding-agent instructions and the [PR template](.github/pull_request_template.md) for the review checklist. These documents do not configure GitHub branch protection.
+See the [detailed branch workflow](docs/branch-workflow.md), [AGENTS.md](AGENTS.md) for coding-agent instructions, and the [PR template](.github/pull_request_template.md) for the review checklist. These documents do not configure GitHub branch protection.
