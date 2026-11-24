@@ -13,7 +13,7 @@ const characters = computed(() => [...props.value])
 </script>
 
 <template>
-  <span class="digital-number" :aria-label="value">
+  <span class="digital-number" role="img" :aria-label="value">
     <template v-for="(character, index) in characters" :key="index">
       <svg v-if="segments[character]" class="digital-digit" viewBox="0 0 32 42" aria-hidden="true">
         <polygon v-for="segment in segments[character]" :key="segment" :points="shapes[segment]" fill="currentColor" />

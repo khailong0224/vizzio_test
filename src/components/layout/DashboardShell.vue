@@ -21,15 +21,15 @@ function focusContent() {
     <a class="skip-link" href="#dashboard-content" @click.prevent="focusContent">{{ common.skipLabel }}</a>
     <div class="city-scene" aria-hidden="true" :style="{ backgroundImage: `url('${assetUrl(page.background)}')`, transform: `scale(${zoom})`, filter: `brightness(${daylight / 100})` }" />
     <div class="scene-shade" aria-hidden="true" />
+    <nav class="dashboard-nav" :aria-label="common.navigationLabel">
+      <RouterLink v-for="item in common.pages" :key="item.id" :to="item.to" :title="item.label">{{ item.shortLabel }}</RouterLink>
+    </nav>
     <DashboardHeader :common="common" :page="page" />
     <SceneControls v-if="weatherTitle" :labels="common.controls" :page="page" :weather-title="weatherTitle" :zoom="zoom" :daylight="daylight" @zoom-in="zoom = Math.min(1.75, zoom + .25)" @zoom-out="zoom = Math.max(1, zoom - .25)" @daylight="daylight = $event" @reset="zoom = 1; daylight = 100" />
     <main id="dashboard-content" class="dashboard-content relative z-10" tabindex="-1">
       <slot :common="common" />
     </main>
     <slot name="footer" />
-    <nav class="dashboard-nav" :aria-label="common.navigationLabel">
-      <RouterLink v-for="item in common.pages" :key="item.id" :to="item.to" :title="item.label">{{ item.shortLabel }}</RouterLink>
-    </nav>
   </div>
   <DataStatus v-else :error="error" @retry="reload" />
 </template>

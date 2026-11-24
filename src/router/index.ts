@@ -4,6 +4,7 @@ import InvestmentView from '../views/InvestmentView.vue'
 
 export const router = createRouter({
   history: createWebHashHistory(),
+  scrollBehavior: (_to, _from, savedPosition) => savedPosition ?? { top: 0 },
   routes: [
     { path: '/', redirect: '/population' },
     { path: '/population', name: 'population', component: PopulationView },
