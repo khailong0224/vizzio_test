@@ -1,0 +1,12 @@
+{
+  "appTitle": "Vizzio dashboards",
+  "skipLabel": "Skip to dashboard",
+  "navigationLabel": "Dashboard pages",
+  "pages": [
+    { "id": "population", "label": "Population & School-Age Structure", "shortLabel": "Population", "to": "/population" },
+    { "id": "investment", "label": "Foreign Direct Investment", "shortLabel": "Investment", "to": "/investment" }
+  ],
+  "providers": { "src": "images/providers.png", "alt": "Powered by Vizzio and Polytron.AI" },
+  "compass": { "label": "Scene heading", "ticks": ["W", "195", "210"] },
+  "controls": { "weather": "Weather", "brightness": "Scene daylight", "zoomIn": "Zoom in", "zoomOut": "Zoom out", "reset": "Reset scene", "fullscreen": "Enter full screen", "exitFullscreen": "Exit full screen" }
+}
