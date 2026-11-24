@@ -1,0 +1,55 @@
+{
+  "id": "investment",
+  "title": "Foreign Direct Investment",
+  "background": "images/investment-city.webp",
+  "brands": { "src": "images/investment-brands.png", "alt": "stc and Mohammed Bin Salman City" },
+  "header": { "time": "02:23:40 PM", "date": "12 Feb 2025", "temperature": "28.5°C" },
+  "total": {
+    "title": "Foreign Direct Investment (FDI)",
+    "value": 96,
+    "unit": "bil SAR",
+    "decimals": 0,
+    "caption": "Total investments in 2024",
+    "change": -21,
+    "changeLabel": "Annual change"
+  },
+  "sectors": {
+    "title": "Key investment sectors",
+    "unit": "%",
+    "changeLabel": "Quarterly change",
+    "items": [
+      { "label": "Financial Services", "value": 35, "change": 1.5, "color": "#9b20de" },
+      { "label": "Infrastructure", "value": 28, "change": 1.5, "color": "#e4bd45" },
+      { "label": "Technology & Innovation", "value": 18, "change": 1.5, "color": "#00d6bf" },
+      { "label": "Others", "value": 19, "change": 1.5, "color": "#a52d51" }
+    ]
+  },
+  "economies": {
+    "title": "Top 5 source economies 2024",
+    "unit": "bil SAR",
+    "items": [
+      { "code": "ae", "label": "United Arab Emirates (UAE)", "value": 40.5 },
+      { "code": "us", "label": "United States", "value": 23.7 },
+      { "code": "cn", "label": "China", "value": 18.3 },
+      { "code": "kw", "label": "Kuwait", "value": 10.1 },
+      { "code": "hk", "label": "Hong Kong", "value": 7.6 }
+    ]
+  },
+  "ticker": {
+    "label": "Stock market snapshot",
+    "pauseLabel": "Pause stock ticker",
+    "resumeLabel": "Resume stock ticker",
+    "reducedMotionLabel": "Stock ticker motion is disabled by your reduced-motion preference",
+    "durationSeconds": 45,
+    "unit": "SAR",
+    "items": [
+      { "name": "Saudi Aramco", "price": 28.15, "priceDecimals": 2, "change": -0.0123 },
+      { "name": "Al Rajhi Bank", "price": 92.3, "priceDecimals": 1, "change": -0.0128 },
+      { "name": "Saudi Telecom Company", "price": 40.7, "priceDecimals": 2, "change": 0 },
+      { "name": "Riyad Bank", "price": 28.5, "priceDecimals": 2, "change": 0.0142 },
+      { "name": "Saudi Basic Industries Corporation", "price": 67.8, "priceDecimals": 1, "change": -0.0145 },
+      { "name": "National Commercial Bank", "price": 33.15, "priceDecimals": 2, "change": 0.0051 }
+    ]
+  },
+  "weatherTitle": "Weather snapshot"
+}
