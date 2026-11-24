@@ -1,0 +1,32 @@
+{
+  "name": "vizzio-dashboards",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "typecheck": "vue-tsc -b",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "vue": "^3.5.46",
+    "vue-router": "^4.6.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@vitejs/plugin-vue": "^6.0.11",
+    "@vue/test-utils": "^2.4.6",
+    "happy-dom": "^21.0.4",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^6.0.3",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.1",
+    "vue-tsc": "^3.3.14"
+  }
+}

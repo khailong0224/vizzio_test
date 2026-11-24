@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Arial, Helvetica, sans-serif;
+  --color-canvas: #06151e;
+  --color-cyan: #00c8f4;
+  --color-mint: #00edbd;
+}
+
+:root { font-family: var(--font-sans); color: #fff; background: var(--color-canvas); }
+body { margin: 0; }
+* { box-sizing: border-box; }
+a, button, input { -webkit-tap-highlight-color: transparent; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid #7fffe3; outline-offset: 5px; }
+button, a { touch-action: manipulation; }
